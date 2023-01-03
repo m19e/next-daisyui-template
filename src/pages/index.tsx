@@ -1,12 +1,10 @@
 import type { NextPage, GetServerSideProps } from "next"
 
-interface Props {}
-
-const Page: NextPage<Props> = () => {
+const Page: NextPage = () => {
   return null
 }
 
-export const getServerSideProps: GetServerSideProps = async ({}) => {
+export const getServerSideProps: GetServerSideProps = async () => {
   return {
     props: {},
   }
