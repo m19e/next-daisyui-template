@@ -1,19 +1,13 @@
 import type { NextPage, GetServerSideProps } from "next"
 
-import type { OpenBonusProps as Props } from "@/types"
-import { Album } from "@/components/templates/Album"
-
-const TopPage: NextPage<Props> = ({ openBonus }) => {
-  return <Album openBonus={openBonus} />
+const Page: NextPage = () => {
+  return null
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ req }) => {
-  const ref = req.headers.referer ?? ""
-  const props: Props = { openBonus: ref.includes("omake") }
-
+export const getServerSideProps: GetServerSideProps = async () => {
   return {
-    props,
+    props: {},
   }
 }
 
-export default TopPage
+export default Page
