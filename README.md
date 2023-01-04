@@ -15,24 +15,16 @@ This project is made with...
 ## Sammary of Strength
 
 - Tailwind & Storybook are already set!
-- Nicely structured folders, which would be familier with OOUI prototyping.
 - Useful ESlint plugins and rules.
   - Tailwind className sort
   - import order
   - unused import deletion
 - Pre-commit hook is also set!
 - Scaffdog generates a nice component folder template!
-- A useful Spacer component is included.
 
 ## Structure
 
-I assume this boilerplate being used in OOUI-aware prototyping. So you would develop like this.
-
-1. Define the type of model (or Object in OOUI) is `@/types` (`@/` means `/src/` here)
-2. Create a mock data that follows the model
-3. Create UI components under `@/components/model`
-
-And scaffdog will help you a lot. See [here](#scaffdog)!
+Scaffdog will help you a lot. See [here](#scaffdog)!
 
 ```zsh
 .
@@ -42,14 +34,13 @@ And scaffdog will help you a lot. See [here](#scaffdog)!
 ├── public
 └── src
     ├── components
-    │   ├── model # components related to models
-    │   ├── page # components which represents page
-    │   └── ui # components indifferent to models
-    ├── mocks # mock data related to models
+    │   ├── templates
+    │   ├── organisms
+    │   ├── molecules
+    │   └── atoms
     ├── pages
     │   └── api
-    ├── styles
-    └── types # type definition of models
+    └── styles
 ```
 
 ## Usage
