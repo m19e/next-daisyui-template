@@ -65,15 +65,15 @@ yarn sb
 Scaffdog help us by generaing a template of project folder.
 I already set some commands and the following is a description of those commands. See also [official document of scaffdog](https://github.com/cats-oss/scaffdog#scaffdog).
 
-**Create a new stage (atomic-design component)**
+**Create a new component**
 
-When you create a new stage, use this command at first.
+When you create a new component, use this command at first.
 
 ```zsh
 yarn sd-gen ac
 ```
 
-Then, scaffdog will ask you some questions. This is an example of creating Empty component.
+Then, scaffdog will ask you some questions. This is an example of creating Sample component.
 
 ```zsh
 ℹ Output destination directory: "."
@@ -90,13 +90,13 @@ The template which would be generated is [here](https://github.com/m19e/next-dai
 
 **Create a new stage with props**
 
-When you create a new stage with props, use this command at first.
+When you create a new comonent with props, use this command at first.
 
 ```zsh
 yarn sd-gen acp
 ```
 
-Then, scaffdog will ask you some questions. This is an example of creating Empty component.
+Then, scaffdog will ask you some questions. This is an example of creating Sample component.
 
 ```zsh
 ℹ Output destination directory: "."
@@ -111,103 +111,46 @@ Then, scaffdog will ask you some questions. This is an example of creating Empty
 
 The template which would be generated is [here](https://github.com/m19e/next-daisyui-template/blob/main/.scaffdog/atomic-component-with-props.md). You can customize this file.
 
-**Create a new component related to model**
-
-When you create a new component related to model, and...
-
-① when the component describes single of model, use this command at first.
-
-```zsh
-npx scaffdog generate mcs
-```
-
-Then, scaffdog will ask you some questions. This is an example of creating Student List Component, which is related to Student model.
-
-```zsh
-? Please select the output destination directory. . # Choose root(.)
-? Which model? student # Enter model name. Multiple words are also fine.
-? Plese enter component name student # Enter component name. Multiple words are also fine.
-
-🐶 Generated 3 files!
-
-     ✔ src/components/model/Student/Student/index.ts
-     ✔ src/components/model/Student/Student/StudentList.tsx
-     ✔ src/components/model/Student/Student/StudentList.stories.tsx
-
-
-```
-
-② when the component describes list of model, use this command at first.
-
-```zsh
-npx scaffdog generate mcl
-```
-
-Then, scaffdog will ask you some questions. This is an example of creating Student List Component, which is related to Student model.
-
-```zsh
-? Please select the output destination directory. . # Choose root(.)
-? Which model? student # Enter model name. Multiple words are also fine.
-? Plese enter component name student list # Enter component name. Multiple words are also fine.
-
-🐶 Generated 3 files!
-
-     ✔ src/components/model/Student/StudentList/index.ts
-     ✔ src/components/model/Student/StudentList/StudentList.tsx
-     ✔ src/components/model/Student/StudentList/StudentList.stories.tsx
-
-
-```
-
-The template which would be generated is [here](https://github.com/HajimexxxNakagawa/Nextwind-Prototyping-Boilerplate/blob/main/.scaffdog/model-component.md). You can customize this file.
-
 **Create a new page component**
 
-When you create a new page component, use this command at first.
+When you create a new page component, and...
+
+① when the simple page component, use this command at first.
 
 ```zsh
-npx scaffdog generate pc
+yarn sd-gen p
 ```
 
-Then, scaffdog will ask you some questions. This is an example of creating About page component.
+Then, scaffdog will ask you some questions. This is an example of creating sample page.
 
 ```zsh
-? Please select the output destination directory. . # Choose root(.)
-? Please enter component name about # Enter component name. Multiple words are also fine.
+ℹ Output destination directory: "."
+? Please enter a page name. sample
 
-🐶 Generated 4 files!
+🐶 Generated 1 file!
 
-     ✔ src/components/page/About/index.ts
-     ✔ src/components/page/About/Page.tsx
-     ✔ src/components/page/About/View.tsx
-     ✔ src/components/page/About/About.stories.tsx
-
-
-```
-
-The template which would be generated is [here](https://github.com/HajimexxxNakagawa/Nextwind-Prototyping-Boilerplate/blob/main/.scaffdog/page-component.md). You can customize this file.
-
-**Create a new ui component**
-
-When you create a new component indifferent to model, use this command at first.
-
-```zsh
-npx scaffdog generate uc
-```
-
-Then, scaffdog will ask you some questions. This is an example of creating Button component.
-
-```zsh
-
-? Please select the output destination directory. . # Choose root(.)
-? Please enter component name button # Enter component name. Multiple words are also fine.
-
-🐶 Generated 2 files!
-
-     ✔ src/components/ui/Button/index.tsx
-     ✔ src/components/ui/Button/Button.stories.tsx
-
+     ✔ src/pages/sample.tsx
 
 ```
 
-The template which would be generated is [here](https://github.com/HajimexxxNakagawa/Nextwind-Prototyping-Boilerplate/blob/main/.scaffdog/ui-component.md). You can customize this file.
+The template which would be generated is [here](https://github.com/m19e/next-daisyui-template/blob/main/.scaffdog/page.md). You can customize this file.
+
+② when the page component with SSR, use this command at first.
+
+```zsh
+yarn sd-gen pp
+```
+
+Then, scaffdog will ask you some questions. This is an example of creating sample page.
+
+```zsh
+ℹ Output destination directory: "."
+? Please enter a page name. sample
+
+🐶 Generated 1 file!
+
+     ✔ src/pages/sample.tsx
+
+```
+
+The template which would be generated is [here](https://github.com/m19e/next-daisyui-template/blob/main/.scaffdog/page-with-props.md). You can customize this file.
