@@ -1,5 +1,5 @@
 ---
-name: 'acp'
+name: 'ap'
 root: '.'
 output: '.'
 questions:

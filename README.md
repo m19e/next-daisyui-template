@@ -72,7 +72,7 @@ When you create a new component, and...
 ① when the simple component, use this command at first.
 
 ```zsh
-yarn sd-gen ac
+yarn sd-gen a
 ```
 
 Then, scaffdog will ask you some questions. This is an example of creating Sample component.
@@ -93,7 +93,7 @@ The template which would be generated is [here](https://github.com/m19e/next-dai
 ② when the component with props, use this command at first.
 
 ```zsh
-yarn sd-gen acp
+yarn sd-gen ap
 ```
 
 Then, scaffdog will ask you some questions. This is an example of creating Sample component.

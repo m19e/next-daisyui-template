@@ -1,5 +1,5 @@
 ---
-name: 'ac'
+name: 'a'
 root: '.'
 output: '.'
 questions:
