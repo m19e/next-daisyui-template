@@ -19,5 +19,4 @@ questions:
 export const {{ inputs.name | pascal }} = () => {
   return null
 }
-{{ "" }}
 ```

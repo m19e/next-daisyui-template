@@ -23,5 +23,4 @@ interface {{ inputs.name | pascal }}Props {
 export const {{ inputs.name | pascal }} = ({ prop }: {{ inputs.name | pascal }}Props) => {
   return null
 }
-{{ "" }}
 ```
