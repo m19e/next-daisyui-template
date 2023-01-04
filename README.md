@@ -12,8 +12,6 @@ This project is made with...
 - husky & lint-staged
 - scaffdog
 
-Demo is [here](https://next-daisy-boilerplate.vercel.app/).
-
 ## Sammary of Strength
 
 - Tailwind & Storybook are already set!
