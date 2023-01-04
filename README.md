@@ -65,12 +65,14 @@ yarn sb
 Scaffdog help us by generaing a template of project folder.
 I already set some commands and the following is a description of those commands. See also [official document of scaffdog](https://github.com/cats-oss/scaffdog#scaffdog).
 
-**Create a new component**
+**Create a new component (atomic-design)**
 
-When you create a new component, use this command at first.
+When you create a new component, and...
+
+① when the simple component, use this command at first.
 
 ```zsh
-yarn sd-gen ac
+yarn sd-gen a
 ```
 
 Then, scaffdog will ask you some questions. This is an example of creating Sample component.
@@ -88,12 +90,10 @@ Then, scaffdog will ask you some questions. This is an example of creating Sampl
 
 The template which would be generated is [here](https://github.com/m19e/next-daisyui-template/blob/main/.scaffdog/atomic-component.md). You can customize this file.
 
-**Create a new stage with props**
-
-When you create a new comonent with props, use this command at first.
+② when the component with props, use this command at first.
 
 ```zsh
-yarn sd-gen acp
+yarn sd-gen ap
 ```
 
 Then, scaffdog will ask you some questions. This is an example of creating Sample component.
