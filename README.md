@@ -65,28 +65,51 @@ yarn sb
 Scaffdog help us by generaing a template of project folder.
 I already set some commands and the following is a description of those commands. See also [official document of scaffdog](https://github.com/cats-oss/scaffdog#scaffdog).
 
-**Create a new model**
+**Create a new stage (atomic-design component)**
 
-When you create a new model, use this command at first.
-
-```zsh
-npx scaffdog generate m
-```
-
-Then, scaffdog will ask you some questions. This is an example of creating Student model.
+When you create a new stage, use this command at first.
 
 ```zsh
-? Please select the output destination directory. . # Choose root(.)
-? Please enter model name student # Enter model name. Multiple words are also fine.
+yarn sd-gen ac
+```
 
-🐶 Generated 2 files!
+Then, scaffdog will ask you some questions. This is an example of creating Empty component.
 
-     ✔ src/types/Student.ts
-     ✔ src/mocks/Student.ts
+```zsh
+ℹ Output destination directory: "."
+? Please select stage. atom # Choose atom (in atom, molecule, organism, template)
+? Please enter a component name. sample
+
+🐶 Generated 1 file!
+
+     ✔ src/components/atoms/Sample.tsx
 
 ```
 
-The template which would be generated is [here](https://github.com/HajimexxxNakagawa/Nextwind-Prototyping-Boilerplate/blob/main/.scaffdog/model.md). You can customize this file.
+The template which would be generated is [here](https://github.com/m19e/next-daisyui-template/blob/main/.scaffdog/atomic-component.md). You can customize this file.
+
+**Create a new stage with props**
+
+When you create a new stage with props, use this command at first.
+
+```zsh
+yarn sd-gen acp
+```
+
+Then, scaffdog will ask you some questions. This is an example of creating Empty component.
+
+```zsh
+ℹ Output destination directory: "."
+? Please select stage. atom # Choose atom (in atom, molecule, organism, template)
+? Please enter a component name. sample
+
+🐶 Generated 1 file!
+
+     ✔ src/components/atoms/Sample.tsx
+
+```
+
+The template which would be generated is [here](https://github.com/m19e/next-daisyui-template/blob/main/.scaffdog/atomic-component-with-props.md). You can customize this file.
 
 **Create a new component related to model**
 
