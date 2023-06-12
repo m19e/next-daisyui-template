@@ -51,106 +51,96 @@
         "pathGroups": [
           {
             "pattern": "next",
-            "group": "internal",
+            "group": "external",
             "position": "before"
           },
           {
             "pattern": "next/**",
-            "group": "internal",
+            "group": "external",
             "position": "before"
           },
           {
             "pattern": "next-**",
-            "group": "internal",
+            "group": "external",
             "position": "before"
           },
           {
             "pattern": "react",
-            "group": "internal",
+            "group": "external",
             "position": "before"
           },
           {
             "pattern": "react-**",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "consts",
             "group": "internal",
             "position": "before"
           },
           {
-            "pattern": "@/consts",
+            "pattern": "consts/**",
             "group": "internal",
             "position": "before"
           },
           {
-            "pattern": "@/types",
+            "pattern": "types",
             "group": "internal",
             "position": "before"
           },
           {
-            "pattern": "@/utils",
+            "pattern": "types/**",
             "group": "internal",
             "position": "before"
           },
           {
-            "pattern": "@/hooks",
+            "pattern": "utils",
             "group": "internal",
             "position": "before"
           },
           {
-            "pattern": "@/types/**",
+            "pattern": "utils/**",
             "group": "internal",
             "position": "before"
           },
           {
-            "pattern": "@/hooks/**",
+            "pattern": "hooks",
             "group": "internal",
             "position": "before"
           },
           {
-            "pattern": "@/utils/**",
+            "pattern": "hooks/**",
             "group": "internal",
             "position": "before"
           },
           {
-            "pattern": "@/pages/**",
+            "pattern": "pages/**",
             "group": "internal",
             "position": "before"
           },
           {
-            "pattern": "@/components/page/**",
+            "pattern": "components/templates/**",
             "group": "internal",
             "position": "before"
           },
           {
-            "pattern": "@/components/model/**",
+            "pattern": "components/organisms/**",
             "group": "internal",
             "position": "before"
           },
           {
-            "pattern": "@/components/ui/**",
+            "pattern": "components/molecules/**",
             "group": "internal",
             "position": "before"
           },
           {
-            "pattern": "@/components/templates/**",
+            "pattern": "components/atoms/**",
             "group": "internal",
             "position": "before"
           },
           {
-            "pattern": "@/components/organisms/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/components/molecules/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/components/atoms/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/styles/**",
+            "pattern": "styles/**",
             "group": "index",
             "position": "before"
           }
