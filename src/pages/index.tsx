@@ -1,7 +1,9 @@
 import type { NextPage, GetServerSideProps } from "next"
 
+import { Themes } from "components/templates/Themes"
+
 const Page: NextPage = () => {
-  return null
+  return <Themes />
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
